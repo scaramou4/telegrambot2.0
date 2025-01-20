@@ -36,6 +36,7 @@ async function startBot() {
         const ratesDate = rates.date;
         const ratesList = Object.entries(rates.rates)
             .map(([currency, rate]) => `${currency}: ${rate}`)
+            .sort((a, b) => a.localeCompare(b)) // Сортировка по алфавиту
             .join('\n');
 
         await bot.sendMessage(chatId, `Курсы на ${ratesDate}:
@@ -62,7 +63,13 @@ ${ratesList}`);
         const chatId = msg.chat.id;
         const text = msg.text.replace(/\s/g, '');
 
-        if (!isNaN(text)) {
+        // Игнорируем команды
+        if (text.startsWith('/')) {
+            return; // Не обрабатываем команды здесь
+        }
+
+        // Проверяем, ввёл ли пользователь число
+        if (!isNaN(text) && text.trim() !== '') {
             const rates = await getRatesOrCache();
             if (!rates) {
                 return bot.sendMessage(chatId, 'Не удалось загрузить курсы валют. Попробуйте позже.');
@@ -74,11 +81,15 @@ ${ratesList}`);
                 return bot.sendMessage(chatId, `Курс для валюты ${selectedCurrency} недоступен.`);
             }
 
+            // Умножение суммы на курс для корректного вывода
             const result = (text / rate).toFixed(2);
-            return bot.sendMessage(chatId, `${text} RUB = ${result} ${selectedCurrency}`);
+            return bot.sendMessage(chatId, `${text} ${selectedCurrency} = ${result} RUB`);
         }
 
-        return bot.sendMessage(chatId, 'Введите сумму или используйте команды.');
+        // Сообщение по умолчанию, если текст не является числом
+        if (!isNaN(text) || text.trim() === '') {
+            return bot.sendMessage(chatId, 'Введите сумму или используйте команды.');
+        }
     });
 }
 

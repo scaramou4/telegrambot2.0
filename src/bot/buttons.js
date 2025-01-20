@@ -1,6 +1,6 @@
 // src/bot/buttons.js
 function createCurrencyButtons(rates) {
-    const currencies = Object.keys(rates);
+    const currencies = Object.keys(rates).sort(); // Сортируем валюты по алфавиту
     const buttons = [];
 
     for (let i = 0; i < currencies.length; i += 3) {
