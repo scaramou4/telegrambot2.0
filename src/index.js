@@ -43,7 +43,7 @@ const commands = [
       });
   
       res.on('end', () => {
-        console.log('Ответ Telegram API:', data);
+        //console.log('Ответ Telegram API:', data);
       });
     });
   
@@ -143,8 +143,8 @@ bot.on('callback_query', async (query) => {
     const data = query.data; // Данные из нажатой кнопки
     const state = userState[chatId];
 
-    console.log('Callback query data:', data); // Лог для отладки
-    console.log('Current state:', state); // Лог текущего состояния
+    //console.log('Callback query data:', data); // Лог для отладки
+    //console.log('Current state:', state); // Лог текущего состояния
 
     if (!state) {
         bot.sendMessage(chatId, "Пожалуйста, начните с команды /start.");
@@ -185,7 +185,7 @@ bot.on('callback_query', async (query) => {
             bot.sendMessage(chatId, "Не удалось загрузить курсы валют.");
         }
     } else {
-        console.log('Необработанное состояние:', state.step);
+        //console.log('Необработанное состояние:', state.step);
     }
 });
 
@@ -235,7 +235,7 @@ bot.on('message', (msg) => {
     } else if (state.step === 'amountInput') {
         const normalizedInput = text.replace(/\s/g, '').replace('?', '.').replace(',', '.'); // Убираем пробелы и заменяем запятую
         const amount = parseFloat(normalizedInput);
-        console.log(amount);
+        //console.log(amount);
         if (!isNaN(amount)) {
             const result = (amount * state.rates[state.currency]).toFixed(2);
             const formattedAmount = amount.toLocaleString('ru-RU'); // Форматируем введённую сумму
