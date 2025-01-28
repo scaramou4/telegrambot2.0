@@ -16,3 +16,4 @@
 {"level":"error","message":"Polling error: EFATAL: Error: getaddrinfo ENOTFOUND api.telegram.org","service":"telegram-bot","timestamp":"2025-01-28 12:12:03"}
 {"level":"info","message":"Using cached rates for date: 28.01.2025","service":"telegram-bot","timestamp":"2025-01-28 12:23:04"}
 {"level":"info","message":"Fetched and cached rates for date: 14/01/2025","service":"telegram-bot","timestamp":"2025-01-28 12:23:46"}
+{"level":"info","message":"Fetched and cached rates for date: 28.01.2025","service":"telegram-bot","timestamp":"2025-01-28 12:35:30"}
