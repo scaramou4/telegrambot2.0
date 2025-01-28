@@ -1,0 +1,18 @@
+{"level":"info","message":"Using cached rates for date: 27.01.2025","service":"telegram-bot","timestamp":"2025-01-27 17:52:31"}
+{"level":"info","message":"Fetched and cached rates for date: 27.01.2025","service":"telegram-bot","timestamp":"2025-01-27 17:54:16"}
+{"level":"error","message":"Polling error: EFATAL: Error: socket hang up","service":"telegram-bot","timestamp":"2025-01-27 19:45:54"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-27 19:45:56"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-27 19:45:56"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-27 19:45:56"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-27 19:45:57"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-27 19:45:57"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-27 19:45:57"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-27 19:45:58"}
+{"level":"error","message":"Polling error: EFATAL: Error: socket hang up","service":"telegram-bot","timestamp":"2025-01-28 11:02:04"}
+{"level":"info","message":"Fetched and cached rates for date: 28.01.2025","service":"telegram-bot","timestamp":"2025-01-28 11:03:16"}
+{"level":"info","message":"Fetched and cached rates for date: 21/03/2022","service":"telegram-bot","timestamp":"2025-01-28 11:03:43"}
+{"level":"error","message":"Polling error: EFATAL: Error: Client network socket disconnected before secure TLS connection was established","service":"telegram-bot","timestamp":"2025-01-28 11:40:12"}
+{"level":"error","message":"Polling error: EFATAL: Error: socket hang up","service":"telegram-bot","timestamp":"2025-01-28 12:12:03"}
+{"level":"error","message":"Polling error: EFATAL: Error: getaddrinfo ENOTFOUND api.telegram.org","service":"telegram-bot","timestamp":"2025-01-28 12:12:03"}
+{"level":"info","message":"Using cached rates for date: 28.01.2025","service":"telegram-bot","timestamp":"2025-01-28 12:23:04"}
+{"level":"info","message":"Fetched and cached rates for date: 14/01/2025","service":"telegram-bot","timestamp":"2025-01-28 12:23:46"}
